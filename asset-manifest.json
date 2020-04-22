@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Dom-Frelance/static/css/main.d1b05096.chunk.css",
+    "main.js": "/Dom-Frelance/static/js/main.8cef5bf6.chunk.js",
+    "main.js.map": "/Dom-Frelance/static/js/main.8cef5bf6.chunk.js.map",
+    "runtime-main.js": "/Dom-Frelance/static/js/runtime-main.709e1633.js",
+    "runtime-main.js.map": "/Dom-Frelance/static/js/runtime-main.709e1633.js.map",
+    "static/js/2.3b94bc88.chunk.js": "/Dom-Frelance/static/js/2.3b94bc88.chunk.js",
+    "static/js/2.3b94bc88.chunk.js.map": "/Dom-Frelance/static/js/2.3b94bc88.chunk.js.map",
+    "index.html": "/Dom-Frelance/index.html",
+    "precache-manifest.9d54d4b49ea2883876242bb1083666d0.js": "/Dom-Frelance/precache-manifest.9d54d4b49ea2883876242bb1083666d0.js",
+    "service-worker.js": "/Dom-Frelance/service-worker.js",
+    "static/css/main.d1b05096.chunk.css.map": "/Dom-Frelance/static/css/main.d1b05096.chunk.css.map",
+    "static/js/2.3b94bc88.chunk.js.LICENSE.txt": "/Dom-Frelance/static/js/2.3b94bc88.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/Dom-Frelance/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.709e1633.js",
+    "static/js/2.3b94bc88.chunk.js",
+    "static/css/main.d1b05096.chunk.css",
+    "static/js/main.8cef5bf6.chunk.js"
+  ]
+}
