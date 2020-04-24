@@ -6,10 +6,16 @@ h1, h2, h3 {
   font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: 0 !important;
 }
 
-p {
+p, a {
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: 0 !important;
+}
+
+.nav-link {
+  cursor: pointer;
 }
