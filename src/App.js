@@ -2,8 +2,10 @@ import React from 'react';
 import Typical from 'react-typical';
 import smoothscroll from 'smoothscroll-polyfill';
 import { Nav, NavItem, NavLink, Container } from 'reactstrap';
+import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
 
 import logo from './star.svg';
+import me from './me.jpg';
 import './App.css';
 import './stars.scss';
 
@@ -11,7 +13,6 @@ import CanvasJSReact from './canvasjs.react';
 
 
 function App() {
-  let CanvasJS = CanvasJSReact.CanvasJS;
   let CanvasJSChart = CanvasJSReact.CanvasJSChart;
   const polly = (val) => {
     smoothscroll.polyfill(document.querySelector(val).scrollIntoView({ behavior: 'smooth' }));
@@ -36,11 +37,13 @@ function App() {
           { label: "Git",  y: 65, color: "#30BCED" },
           { label: "API",  y: 70, color: "#F02D3A" },
           { label: "JSON",  y: 70, color: "#30BCED" },
-          { label: "Node.js",  y: 70, color: "#F02D3A" },
-          { label: "React",  y: 80, color: "#30BCED" },
-          { label: "Javascript", y: 80, color: "#F02D3A" },
-          { label: "CSS", y: 90, color: "#30BCED" },
-          { label: "HTML",  y: 90, color: "#F02D3A" },
+          { label: "Wordpress",  y: 70, color: "#F02D3A" },
+          { label: "Node.js",  y: 70, color: "#30BCED" },
+          { label: "React",  y: 80, color: "#F02D3A" },
+          { label: "Javascript", y: 80, color: "#30BCED" },
+          { label: "CSS", y: 90, color: "#F02D3A" },
+          { label: "HTML",  y: 90, color: "#30BCED" },
+          
       ]
      }]
  }
@@ -104,7 +107,7 @@ function App() {
       <div id="about">
         <Container>
           <h1>About</h1>
-          <img src="./me.JPG" alt="Dominc Nguyen"></img>
+          <img src={me} alt="Dominc Nguyen"></img>
           <h3>I am a full stack developer with a passion for back end 
           and database creation. Take a look around my site to get to know about how I am as a developer or if you want me to help
           on a project.</h3>
@@ -117,7 +120,7 @@ function App() {
         <Container>
           <h1>Projects</h1>
           <div className="articles">
-            <img src="me.jpg" alt="project" width="500" height="300"></img>
+            <img src={me} alt="project" width="500" height="300"></img>
             <div className="articlesContent">
               <h2>Title</h2>
               <h3>Skill</h3>
@@ -134,14 +137,14 @@ function App() {
               <a href="wow.com"><p>Site Link</p></a>
               <a href="wow.com"><p>Github Link</p></a>
             </div>
-            <img src="me.jpg" alt="project" width="500" height="300"></img>
+            <img src={me} alt="project" width="500" height="300"></img>
           </div>
         </Container>
       </div>
       <div id="testimonials">
         <Container>
           <h1>Testimonials</h1>
-          <div>
+          <div className="testimonialcontent">
             <h3>"Awesome quote about me here"</h3>
             <p>- Person Name</p>
           </div>
@@ -149,11 +152,13 @@ function App() {
       </div>
       <div id="contact">
           <h1>Contact</h1>
-          <p>Want to get in touch with me or work on a project together?</p>
-          <p>Email me at <a href="nguyendominic1998@gmail.com">nguyendominic1998@gmail.com</a></p>
-      </div>
-      <div className="footer">
-        <p>Dominic Nguyen <b>©2020</b></p>
+          <h3>Want to get in touch with me or work on a project together?</h3>
+          <h3>Email me at <a href="mailto:nguyendominic1998@gmail.com"><b className="highlight">nguyendominic1998@gmail.com</b></a></h3>
+          <div className="faiconcontent">
+          <a href="https://www.google.com"><FaGithubSquare className="faicon"></FaGithubSquare></a>
+          <a href="https://www.google.com"><FaLinkedin className="faicon"></FaLinkedin></a>
+          </div>
+          <p>Dominic Nguyen <b className="highlight">©2020</b></p>
       </div>
     </div>
   );

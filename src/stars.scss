@@ -136,3 +136,15 @@ $shadows-big:    multiple-box-shadow(100);
   .navigation a:hover{
     color: darken(#F02D3A, 5%)
   }
+
+  .faicon{
+    height: 50px;
+    width: 50px;
+    margin: 0 15px;
+    transition: 0.2s;
+    color: white;
+  }
+  
+  .faicon:hover{
+    color: darken(#F02D3A, 5%)
+  }
