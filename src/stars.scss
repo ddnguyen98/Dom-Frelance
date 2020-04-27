@@ -125,16 +125,23 @@ $shadows-big:    multiple-box-shadow(100);
 
   }
 
-  .navigation .container {
+  .navigation .items {
     display: flex;
     justify-content: flex-start;
   }
   
   .navigation a{
     transition: 0.2s;
+    color: white !important;
   }
   .navigation a:hover{
-    color: darken(#F02D3A, 5%)
+    color: darken(#F02D3A, 5%) !important;
+  }
+  .articlesContent a {
+    color: #F02D3A;
+  }
+  .articlesContent a:hover {
+    color: darken(#F02D3A, 5%) !important;
   }
 
   .faicon{

@@ -1,31 +1,46 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Typical from 'react-typical';
 import smoothscroll from 'smoothscroll-polyfill';
-import { Nav, NavItem, NavLink, Container } from 'reactstrap';
-import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
+import {
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  Nav,
+  NavItem,
+  NavLink,
+  Container
+} from 'reactstrap';
 
+import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
 import logo from './star.svg';
 import me from './me.jpg';
+import carol from './img/carol.png';
+import head from './img/head.jpg';
+import bike from './img/bike.png';
+import celebrity from './img/celebrity.png';
+import dogily from './img/dogily.jpg';
+import paw from './img/paw.png';
+
 import './App.css';
 import './stars.scss';
 
 import CanvasJSReact from './canvasjs.react';
-
+let CanvasJSChart = CanvasJSReact.CanvasJSChart;
 
 function App() {
-  let CanvasJSChart = CanvasJSReact.CanvasJSChart;
   const polly = (val) => {
     smoothscroll.polyfill(document.querySelector(val).scrollIntoView({ behavior: 'smooth' }));
   }
   const options = {
     title: {
       text: "Skills",
-      titleFontFamily:'Montserrat',
+      fontFamily: 'Montserrat',
     },
     axisY: {
       suffix: "%",
       gridColor: "white",
       labelFontSize: 0,
+      fontFamily: 'Roboto',
     },
     data: [{				
       type: "stackedBar",
@@ -47,6 +62,9 @@ function App() {
       ]
      }]
  }
+ const [isOpen, setIsOpen] = useState(false);
+
+ const toggle = () => setIsOpen(!isOpen);
   return (
     <div className="App"> 
       <header className="App-header">
@@ -62,7 +80,7 @@ function App() {
                   'a Full Stack Developer.', 2000, 
                   'creative.', 2000,
                   'curious.', 2000,
-                  'through.', 2000,
+                  'thorough.', 2000,
                   'friendly.', 2000,
                   'passionate.', 2000,
               ]}
@@ -84,34 +102,37 @@ function App() {
           <div id='stars2'></div>
           <div id='stars3'></div>
       </header>
-      <Nav className="navigation">
-        <Container>
-          <NavItem>
-            <NavLink onClick={()=>{polly('#home')}}>HOME</NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink onClick={()=>{polly('#about')}}>ABOUT</NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink onClick={()=>{polly('#projects')}}>PROJECTS</NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink onClick={()=>{polly('#testimonials')}}>TESTIMONIALS</NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink onClick={()=>{polly('#contact')}}>CONTACT</NavLink>
-          </NavItem>
+      <Navbar dark expand="md" className="navigation">
+      <Container>
+        <NavbarToggler onClick={toggle} />
+          <Collapse isOpen={isOpen} navbar>
+            <Nav navbar className="items">
+                <NavItem>
+                  <NavLink onClick={()=>{polly('#about')}}>ABOUT</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink onClick={()=>{polly('#projects')}}>PROJECTS</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink onClick={()=>{polly('#testimonials')}}>TESTIMONIALS</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink onClick={()=>{polly('#contact')}}>CONTACT</NavLink>
+                </NavItem>
+            </Nav>
+          </Collapse>
         </Container>
-
-      </Nav>
+      </Navbar>
       <div id="about">
         <Container>
           <h1>About</h1>
-          <img src={me} alt="Dominc Nguyen"></img>
-          <h3>I am a full stack developer with a passion for back end 
-          and database creation. Take a look around my site to get to know about how I am as a developer or if you want me to help
-          on a project.</h3>
-          <div>
+          <div className="aboutcontent">
+            <div className="aboutcontent2">
+              <img src={me} alt="Dominc Nguyen" width='250px' height='300px'></img>
+              <p>I am a full stack developer with a passion for back end 
+              and database creation. Take a look around my site to get to know about my skills as a developer or if you want me to help
+              on a project.</p>
+            </div>  
             <CanvasJSChart options = {options}/>
           </div>
         </Container>
@@ -120,24 +141,65 @@ function App() {
         <Container>
           <h1>Projects</h1>
           <div className="articles">
-            <img src={me} alt="project" width="500" height="300"></img>
+            <img src={carol} alt="project" />
             <div className="articlesContent">
-              <h2>Title</h2>
-              <h3>Skill</h3>
-              <p>Description</p>
-              <a href="wow.com"><p>Site Link</p></a>
-              <a href="wow.com"><p>Github Link</p></a>
+              <h2>L Carol Holt Associates</h2>
+              <h3>WordPress</h3>
+              <p>Brainstormed brand and site identity with client and made sure that what they wanted was to their preference. Spent a month
+                planing and styling out site, getting assets and information for the layout of the site. Am currently the web master of said 
+                site providing technical assistance when needed.
+              </p>
+              <p><a href="https://lcarolholt.com/" target="_blank" rel="noopener noreferrer">Site Link</a></p>
             </div>
           </div>
           <div className="articles">
+            <img src={head} alt="project" />
             <div className="articlesContent">
-              <h2>Title</h2>
-              <h3>Skill</h3>
-              <p>Description</p>
-              <a href="wow.com"><p>Site Link</p></a>
-              <a href="wow.com"><p>Github Link</p></a>
+              <h2>3 Headed Dragon</h2>
+              <h3>React/Redux</h3>
+              <p>This site was my final submission for my time at fullsail 
+                and I think it shows off well how I handle large amounts of data to keep track 
+                and store them in the database. Each item ,weapon, skill, feat, and spell is tracked by a
+                 character id, which is tied to a user id. The site functions as a character creator for dnd 3.5e, 
+                 where you can keep track of your characters that you store for yourself. I found the hardest thing at first is managing 
+                 and setting up redux, as the asynchronous nature of javascript sometimes makes things difficult. 
+                 I really enjoy interacting with the back end of a site and hope this shows off my skills as a developer.
+              </p>
+              <p><a href="https://github.com/fs-tech-degs/capstone-project-1911-ddnguyen98" target="_blank" rel="noopener noreferrer">Github Link</a></p>
             </div>
-            <img src={me} alt="project" width="500" height="300"></img>
+          </div>
+          <div className="articles">
+            <img src={bike} alt="project" />
+            <div className="articlesContent">
+              <h2>Bike shop</h2>
+              <h3>Javascript</h3>
+              <p>Practiced proper html semantic code when designing this site from scratch. 
+                Used pre given assets to create the site from scratch. Practiced pre planning along with setting up asset boards.
+              </p>
+              <p><a href="https://github.com/ddnguyen98/ddnguyen98.github.io/tree/master" target="_blank" rel="noopener noreferrer">Github Link</a></p>
+              <p><a href="https://ddnguyen98.github.io/BikeShop/" target="_blank" rel="noopener noreferrer">Site Link</a></p>
+            </div>
+          </div>
+          <div className="articles">
+            <img src={paw} alt="project" />
+            <div className="articlesContent">
+              <h2>Paw Pals</h2>
+              <h3>React/Firebase</h3>
+              <p>Paw pals is a site where dog owners can go on play dates with other dogs owners that sign up for the site. Using data created from a random user API along with a dog api that spit out a dog based on the first letter of a users name, a profile was created with those dog details. The list was saved to a matches page where you can view people you have declined and accepted. Since I did not know how to set up a proper backend at the time I used google Firebase to set up user authentication along that stored user json data.</p>
+              <p><a href="https://github.com/ddnguyen98/deployPP5" target="_blank" rel="noopener noreferrer">Github Link</a></p>
+              <p><a href="https://ddnguyen98.github.io/deployPP5/#/" target="_blank" rel="noopener noreferrer">Site Link</a></p>
+
+            </div>
+          </div>
+          <div className="articles">
+            <img src={dogily} alt="project" />
+            <div className="articlesContent">
+              <h2>Dogily</h2>
+              <h3>Javascript</h3>
+              <p>Dogily is a concept site where you can adopt dogs based on a quiz you take right at the beginning. This project was a test of my designing skills as this whole project was mainly focused around that. I practiced my use of css and design principles in this project.</p>
+              <p><a href="https://github.com/ddnguyen98/Dogily" target="_blank" rel="noopener noreferrer">Github Link</a></p>
+              <p><a href="https://ddnguyen98.github.io/Dogily/html/" target="_blank" rel="noopener noreferrer">Site Link</a></p>
+            </div>
           </div>
         </Container>
       </div>
@@ -151,14 +213,16 @@ function App() {
         </Container>
       </div>
       <div id="contact">
+        <Container>
           <h1>Contact</h1>
-          <h3>Want to get in touch with me or work on a project together?</h3>
-          <h3>Email me at <a href="mailto:nguyendominic1998@gmail.com"><b className="highlight">nguyendominic1998@gmail.com</b></a></h3>
+          <p>Want to get in touch with me or work on a project together?</p>
+          <p>Email me at <a href="mailto:nguyendominic1998@gmail.com"><b className="highlight">nguyendominic1998@gmail.com</b></a></p>
           <div className="faiconcontent">
-          <a href="https://www.google.com"><FaGithubSquare className="faicon"></FaGithubSquare></a>
-          <a href="https://www.google.com"><FaLinkedin className="faicon"></FaLinkedin></a>
+          <a href="https://github.com/ddnguyen98" target="_blank" rel="noopener noreferrer"><FaGithubSquare className="faicon"></FaGithubSquare></a>
+          <a href="https://www.linkedin.com/in/dominic-nguyen-b385b7165/" target="_blank" rel="noopener noreferrer"><FaLinkedin className="faicon"></FaLinkedin></a>
           </div>
           <p>Dominic Nguyen <b className="highlight">©2020</b></p>
+        </Container>
       </div>
     </div>
   );
