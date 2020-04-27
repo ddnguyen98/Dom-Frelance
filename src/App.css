@@ -65,7 +65,7 @@
   padding: 50px 0;
 }
 #projects {
-  background-color: #f0f0f0;
+  background-color: white;
 }
 
 #contact {
@@ -91,6 +91,10 @@
 
 .articlesContent p {
   padding: 30px;
+}
+
+.articles h3{
+  color: #F02D3A;
 }
 
 .articles img {

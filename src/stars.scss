@@ -139,6 +139,7 @@ $shadows-big:    multiple-box-shadow(100);
   }
   .articlesContent a {
     color: #F02D3A;
+    padding: 0 10px;
   }
   .articlesContent a:hover {
     color: darken(#F02D3A, 5%) !important;

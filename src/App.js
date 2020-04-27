@@ -17,7 +17,6 @@ import me from './me.jpg';
 import carol from './img/carol.png';
 import head from './img/head.jpg';
 import bike from './img/bike.png';
-import celebrity from './img/celebrity.png';
 import dogily from './img/dogily.jpg';
 import paw from './img/paw.png';
 
@@ -176,8 +175,8 @@ function App() {
               <p>Practiced proper html semantic code when designing this site from scratch. 
                 Used pre given assets to create the site from scratch. Practiced pre planning along with setting up asset boards.
               </p>
-              <p><a href="https://github.com/ddnguyen98/ddnguyen98.github.io/tree/master" target="_blank" rel="noopener noreferrer">Github Link</a></p>
-              <p><a href="https://ddnguyen98.github.io/BikeShop/" target="_blank" rel="noopener noreferrer">Site Link</a></p>
+              <p><a href="https://github.com/ddnguyen98/ddnguyen98.github.io/tree/master" target="_blank" rel="noopener noreferrer">Github Link</a>
+              <a href="https://ddnguyen98.github.io/BikeShop/" target="_blank" rel="noopener noreferrer">Site Link</a></p>
             </div>
           </div>
           <div className="articles">
@@ -186,9 +185,8 @@ function App() {
               <h2>Paw Pals</h2>
               <h3>React/Firebase</h3>
               <p>Paw pals is a site where dog owners can go on play dates with other dogs owners that sign up for the site. Using data created from a random user API along with a dog api that spit out a dog based on the first letter of a users name, a profile was created with those dog details. The list was saved to a matches page where you can view people you have declined and accepted. Since I did not know how to set up a proper backend at the time I used google Firebase to set up user authentication along that stored user json data.</p>
-              <p><a href="https://github.com/ddnguyen98/deployPP5" target="_blank" rel="noopener noreferrer">Github Link</a></p>
-              <p><a href="https://ddnguyen98.github.io/deployPP5/#/" target="_blank" rel="noopener noreferrer">Site Link</a></p>
-
+              <p><a href="https://github.com/ddnguyen98/deployPP5" target="_blank" rel="noopener noreferrer">Github Link</a>
+              <a href="https://ddnguyen98.github.io/deployPP5/#/" target="_blank" rel="noopener noreferrer">Site Link</a></p>
             </div>
           </div>
           <div className="articles">
@@ -197,8 +195,8 @@ function App() {
               <h2>Dogily</h2>
               <h3>Javascript</h3>
               <p>Dogily is a concept site where you can adopt dogs based on a quiz you take right at the beginning. This project was a test of my designing skills as this whole project was mainly focused around that. I practiced my use of css and design principles in this project.</p>
-              <p><a href="https://github.com/ddnguyen98/Dogily" target="_blank" rel="noopener noreferrer">Github Link</a></p>
-              <p><a href="https://ddnguyen98.github.io/Dogily/html/" target="_blank" rel="noopener noreferrer">Site Link</a></p>
+              <p><a href="https://github.com/ddnguyen98/Dogily" target="_blank" rel="noopener noreferrer">Github Link</a>
+              <a href="https://ddnguyen98.github.io/Dogily/html/" target="_blank" rel="noopener noreferrer">Site Link</a></p>
             </div>
           </div>
         </Container>
