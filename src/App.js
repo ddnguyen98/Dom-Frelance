@@ -144,9 +144,7 @@ function App() {
             <div className="articlesContent">
               <h2>L Carol Holt Associates</h2>
               <h3>WordPress</h3>
-              <p>Brainstormed brand and site identity with client and made sure that what they wanted was to their preference. Spent a month
-                planing and styling out site, getting assets and information for the layout of the site. Am currently the web master of said 
-                site providing technical assistance when needed.
+              <p>Brainstormed brand and site identity with client and made sure their preferences were incorporated. I planned and designed the site site, gathering assets and information for the layout, and finished the entire process in less than a month. Am currently the web master of this site providing technical assistance when needed.
               </p>
               <p><a href="https://lcarolholt.com/" target="_blank" rel="noopener noreferrer">Site Link</a></p>
             </div>
@@ -156,13 +154,7 @@ function App() {
             <div className="articlesContent">
               <h2>3 Headed Dragon</h2>
               <h3>React/Redux</h3>
-              <p>This site was my final submission for my time at fullsail 
-                and I think it shows off well how I handle large amounts of data to keep track 
-                and store them in the database. Each item ,weapon, skill, feat, and spell is tracked by a
-                 character id, which is tied to a user id. The site functions as a character creator for dnd 3.5e, 
-                 where you can keep track of your characters that you store for yourself. I found the hardest thing at first is managing 
-                 and setting up redux, as the asynchronous nature of javascript sometimes makes things difficult. 
-                 I really enjoy interacting with the back end of a site and hope this shows off my skills as a developer.
+              <p>This site was my final submission for Full Sail University and it displays my ability to handle large amounts of data and to keep track and store them in the database. Each item ,weapon, skill, feat, and spell is tracked by a character ID, which is tied to a user ID. The site functions as a character creator for dnd 3.5e, and it allows users to keep track of your characters that you store for yourself. This site was difficult to construct, because of the the asynchronous nature of javascript sometimes makes things difficult. I really enjoy interacting with the back end of a site and hope this shows off my skills as a developer.
               </p>
               <p><a href="https://github.com/fs-tech-degs/capstone-project-1911-ddnguyen98" target="_blank" rel="noopener noreferrer">Github Link</a></p>
             </div>
@@ -172,9 +164,7 @@ function App() {
             <div className="articlesContent">
               <h2>Bike shop</h2>
               <h3>Javascript</h3>
-              <p>Practiced proper html semantic code when designing this site from scratch. 
-                Used pre given assets to create the site from scratch. Practiced pre planning along with setting up asset boards.
-              </p>
+              <p>When designing this site from scratch, I practiced proper html semantic code and used pre given assets to create the site. This project also included preplanning and setting up asset boards.</p>
               <p><a href="https://github.com/ddnguyen98/ddnguyen98.github.io/tree/master" target="_blank" rel="noopener noreferrer">Github Link</a>
               <a href="https://ddnguyen98.github.io/BikeShop/" target="_blank" rel="noopener noreferrer">Site Link</a></p>
             </div>
@@ -184,7 +174,7 @@ function App() {
             <div className="articlesContent">
               <h2>Paw Pals</h2>
               <h3>React/Firebase</h3>
-              <p>Paw pals is a site where dog owners can go on play dates with other dogs owners that sign up for the site. Using data created from a random user API along with a dog api that spit out a dog based on the first letter of a users name, a profile was created with those dog details. The list was saved to a matches page where you can view people you have declined and accepted. Since I did not know how to set up a proper backend at the time I used google Firebase to set up user authentication along that stored user json data.</p>
+              <p>Paw pals is a site where dog owners arrange on play dates with other dog owners that sign up for the site. Using data created from a random user API along with a dog api that spit out a dog based on the first letter of a users name, a profile was created with those dog details. The list was saved to a matches page where users can view dates declined and accepted. I used google Firebase to set up user authentication that stored user json data.</p>
               <p><a href="https://github.com/ddnguyen98/deployPP5" target="_blank" rel="noopener noreferrer">Github Link</a>
               <a href="https://ddnguyen98.github.io/deployPP5/#/" target="_blank" rel="noopener noreferrer">Site Link</a></p>
             </div>
@@ -194,7 +184,7 @@ function App() {
             <div className="articlesContent">
               <h2>Dogily</h2>
               <h3>Javascript</h3>
-              <p>Dogily is a concept site where you can adopt dogs based on a quiz you take right at the beginning. This project was a test of my designing skills as this whole project was mainly focused around that. I practiced my use of css and design principles in this project.</p>
+              <p>Dogily is a concept site where users can adopt dogs based on an opening quiz. This project was a test of my designing skills, and I practiced my use of css and design principles in this project.</p>
               <p><a href="https://github.com/ddnguyen98/Dogily" target="_blank" rel="noopener noreferrer">Github Link</a>
               <a href="https://ddnguyen98.github.io/Dogily/html/" target="_blank" rel="noopener noreferrer">Site Link</a></p>
             </div>
@@ -205,8 +195,8 @@ function App() {
         <Container>
           <h1>Testimonials</h1>
           <div className="testimonialcontent">
-            <h3>"Awesome quote about me here"</h3>
-            <p>- Person Name</p>
+            <h3>"I have no idea how I could work remotely without Dominic's skills."</h3>
+            <p>- Tomas Salinger</p>
           </div>
         </Container>
       </div>
