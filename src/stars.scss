@@ -89,11 +89,32 @@ $shadows-big:    multiple-box-shadow(100);
         transform: translateY(-2000px);
     }
 }
+
+.abutton {
+  min-width: 120px;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+
+  text-align: center;
+  text-transform: uppercase; 
+
+  padding: 5px 30px;
+  margin: 20px;
+
+  transition: 0.5s;
+
+  
+  border: 5px solid black;
+  color: black;
+  background-color: transparent;
+}
 .readmore {
     min-width: 120px;
     position: relative;
-    display: inline-block;
+    display: inline;
     z-index: 1;
+    line-height: 0 !important;
 
     text-align: center;
     text-transform: uppercase; 
@@ -109,7 +130,8 @@ $shadows-big:    multiple-box-shadow(100);
     background-color: transparent;
 }
 
-.readmore:hover {
+.readmore:hover, .abutton:hover {
+  color: white;
 	background-color: darken(#F02D3A, 5%);
 	border: 5px solid darken(#F02D3A, 5%);
 	cursor: pointer;

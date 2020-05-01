@@ -53,6 +53,7 @@
 #about h1, #projects h1, #testimonials h1, #contact h1 {
   padding: 50px 0;
 }
+
 #about p {
   padding: 25px;
 }
@@ -65,7 +66,7 @@
   padding: 50px 0;
 }
 #projects {
-  background-color: white;
+  background-color: #F6F8F8;
 }
 
 #contact {
@@ -86,11 +87,11 @@
 .articlesContent {
   padding: 25px 0;
   display: inline-block;
-  border-bottom: solid black 2px;
 }
 
 .articlesContent p {
   padding: 30px;
+  text-align: justify
 }
 
 .articles h3{
