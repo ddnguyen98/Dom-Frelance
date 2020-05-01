@@ -144,7 +144,7 @@ function App() {
             <div className="articlesContent">
               <h2>L Carol Holt Associates</h2>
               <h3>WordPress</h3>
-              <p>Brainstormed brand and site identity with client and made sure their preferences were incorporated. I planned and designed the site, gathered assets and information for the layout, and finished the entire process in less than a month. I Am currently the web master of this site providing technical assistance when needed.
+              <p>Brainstormed brand and site identity with client and made sure their preferences were incorporated. I planned and designed the site, gathered assets and information for the layout, and finished the entire process in less than a month. Im currently the web master of this site providing technical assistance when needed.
               </p>
               <p><a href="https://lcarolholt.com/" target="_blank" rel="noopener noreferrer">Site Link</a></p>
             </div>
@@ -154,7 +154,7 @@ function App() {
             <div className="articlesContent">
               <h2>3 Headed Dragon</h2>
               <h3>React/Redux</h3>
-              <p>This site was my final submission for Full Sail University and it displays my ability to handle large amounts of data and to keep track and store them in the database. Each item ,weapon, skill, feat, and spell is tracked by a character ID, which is tied to a user ID. The site functions as a character creator for dnd 3.5e, and it allows users to keep track of their characters they can store for themselves. This site was difficult to construct, because the asynchronous nature of javascript. I really enjoy interacting with the back end of a site and hope this shows off my skills as a developer.
+              <p>This site was my final submission for Full Sail University and it displays my ability to handle large amounts of data and to keep track and store them in the database. Each item, weapon, skill, feat, and spell is tracked by a character ID, which is tied to a user ID. The site functions as a character creator for dnd 3.5e, and it allows users to keep track of their characters they can store for themselves. This site was difficult to construct, because of the asynchronous nature of javascript. I really enjoy interacting with the back end of a site and hope this shows off my skills as a developer.
               </p>
               <p><a href="https://github.com/fs-tech-degs/capstone-project-1911-ddnguyen98" target="_blank" rel="noopener noreferrer">Github Link</a></p>
             </div>
