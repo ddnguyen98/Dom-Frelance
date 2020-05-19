@@ -50,15 +50,15 @@ function App() {
       indexLabel: "{y}",
       dataPoints: [
           { label: "UX/UI",  y: 65, color: "#F02D3A" },
-          { label: "Git",  y: 65, color: "#30BCED" },
+          { label: "Git",  y: 65, color: "#2b7cff" },
           { label: "API",  y: 70, color: "#F02D3A" },
-          { label: "JSON",  y: 70, color: "#30BCED" },
+          { label: "JSON",  y: 70, color: "#2b7cff" },
           { label: "Wordpress",  y: 70, color: "#F02D3A" },
-          { label: "Node.js",  y: 70, color: "#30BCED" },
+          { label: "Node.js",  y: 70, color: "#2b7cff" },
           { label: "React",  y: 80, color: "#F02D3A" },
-          { label: "Javascript", y: 80, color: "#30BCED" },
+          { label: "Javascript", y: 80, color: "#2b7cff" },
           { label: "CSS", y: 90, color: "#F02D3A" },
-          { label: "HTML",  y: 90, color: "#30BCED" },
+          { label: "HTML",  y: 90, color: "#2b7cff" },
           
       ]
      }]
@@ -199,6 +199,10 @@ function App() {
           <div className="testimonialcontent">
             <h3>"I have no idea how I could work remotely without Dominic's skills."</h3>
             <p>- Tomas Salinger</p>
+          </div>
+          <div className="testimonialcontent">
+            <h3>"Dominic’s combination of technical and motivational expertise made him the perfect partner to develop my web-site. His energy is positive and earnest and inspired me! "</h3>
+            <p>- Carol Holt</p>
           </div>
         </Container>
       </div>
