@@ -13,12 +13,14 @@ import {
 
 import { FaGithubSquare, FaLinkedin, FaExternalLinkAlt } from "react-icons/fa";
 import logo from './star.svg';
-import me from './me.jpg';
+import me from './img/me2.jpg';
 import carol from './img/carol.png';
 import head from './img/head.jpg';
 import bike from './img/bike.png';
 import dogily from './img/dogily.jpg';
 import paw from './img/paw.png';
+import innovative from './img/innovative.png';
+
 
 import './App.css';
 import './stars.scss';
@@ -49,6 +51,7 @@ function App() {
       indexLabelFontColor: "white",
       indexLabel: "{y}",
       dataPoints: [
+          { label: "Logo/Asset Creation", y: 60, color: "#2b7cff" },
           { label: "UX/UI",  y: 65, color: "#F02D3A" },
           { label: "Git",  y: 65, color: "#2b7cff" },
           { label: "API",  y: 70, color: "#F02D3A" },
@@ -112,7 +115,7 @@ function App() {
                   <NavLink onClick={()=>{polly('#about')}}>ABOUT</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink onClick={()=>{polly('#projects')}}>PROJECTS</NavLink>
+                  <NavLink onClick={()=>{polly('#projects')}}>PROJECTS AND WORK</NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink onClick={()=>{polly('#testimonials')}}>TESTIMONIALS</NavLink>
@@ -140,7 +143,7 @@ function App() {
       </div>
       <div id="projects">
         <Container>
-          <h1>Projects</h1>
+          <h1>Client Sites I Worked On</h1>
           <div className="articles">
             <img src={carol} alt="project" />
             <div className="articlesContent">
@@ -151,6 +154,17 @@ function App() {
               <a href="https://lcarolholt.com/" target="_blank" rel="noopener noreferrer"><button className="abutton">Site <FaExternalLinkAlt /></button></a>
             </div>
           </div>
+          <div className="articles">
+            <img src={innovative} alt="project" />
+            <div className="articlesContent">
+              <h2>AND? Innovative Negotiation</h2>
+              <h3>PHP + HTML</h3>
+              <p>Updated old css and html to meet with the new design of book for my client. Made sure keep in constant contact with client as to not leave them out of the creation progress and to keep them informed to anything they disliked. Created a new logo from scratch for clients new site as well as some assets. 
+              </p>
+              <a href="http://www.inventivenegotiation.com/" target="_blank" rel="noopener noreferrer"><button className="abutton">Site <FaExternalLinkAlt /></button></a>
+            </div>
+          </div>
+          <h1>Projects</h1>
           <div className="articles">
             <img src={head} alt="project" />
             <div className="articlesContent">
