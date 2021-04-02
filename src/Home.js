@@ -11,7 +11,7 @@ import {
   Container
 } from 'reactstrap';
 
-import { FaGithubSquare, FaLinkedin, FaExternalLinkAlt, FaFileDownload } from "react-icons/fa";
+import { FaGithubSquare, FaLinkedin, FaExternalLinkAlt } from "react-icons/fa";
 import logo from './img/star.svg';
 import me from './img/me2.jpg';
 import carol from './img/carol.png';
@@ -110,7 +110,7 @@ function App() {
                   <NavLink onClick={()=>{polly('#about')}}>ABOUT</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink onClick={()=>{polly('#projects')}}>PROJECTS AND WORK</NavLink>
+                  <NavLink onClick={()=>{polly('#projects')}}>PROJECTS AND EXPERIENCE</NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink onClick={()=>{polly('#testimonials')}}>TESTIMONIALS</NavLink>
@@ -124,13 +124,17 @@ function App() {
       </Navbar>
       <div id="about">
         <Container>
-          <h1>About</h1>
+          <h1>About Me</h1>
           <div className="aboutcontent">
             <div className="aboutcontent2">
               <img src={me} alt="Dominc Nguyen" width='250px' height='300px'></img>
               <p>I am a full stack developer with a passion for back end 
-              and database creation. Take a look around my site to get to know about my skills as a developer or if you want me to help
-              on a project.</p>
+              and database creation. Designing website's was not my first thought for a carer path but I found
+              that both my creative and technical side to my brain made me gravitate to the world of web development. I actually created a website
+              for an english project about Cthulu since I didn't want to just make another boring essay. 
+              You can view the site <a href="https://shamze33.wixsite.com/cthulhuslibrary" className="highlight">here</a> to get a view of my first
+              ever site I made in highschool. Take a look around the site to get to know my style of website development and contact me with any
+              opportunities.</p>
             </div>  
             <CanvasJSChart options = {options}/>
           </div>
@@ -218,7 +222,9 @@ function App() {
       <div id="contact">
         <Container>
           <h1>Contact</h1>
-          <p>Want to get in touch with me or work on a project together?</p>
+          <p>Want to get in touch with me or work on a project together? The best way to contact me is at the email below since I am wary of random calls
+            on my cellphone since there have been a lot of scammers lately.
+          </p>
           <p>Email me at <a href="mailto:nguyendominic1998@gmail.com"><b className="highlight">nguyendominic1998@gmail.com</b></a></p>
           <div className="faiconcontent">
           <a href="https://github.com/ddnguyen98" title="Github Account" target="_blank" rel="noopener noreferrer"><FaGithubSquare className="faicon"></FaGithubSquare></a>
