@@ -44,17 +44,17 @@ function App() {
       indexLabelFontColor: "white",
       indexLabel: "{y}",
       dataPoints: [
-          { label: "Logo/Asset Creation", y: 60, color: "#2b7cff" },
-          { label: "UX/UI",  y: 65, color: "#F02D3A" },
-          { label: "Git",  y: 65, color: "#2b7cff" },
-          { label: "API",  y: 70, color: "#F02D3A" },
-          { label: "JSON",  y: 70, color: "#2b7cff" },
-          { label: "Wordpress",  y: 70, color: "#F02D3A" },
+          { label: "Logo/Asset Creation", y: 60, color: "#F02D3A" },
+          { label: "UX/UI",  y: 65, color: "#2b7cff" },
+          { label: "Git",  y: 65, color: "#F02D3A" },
           { label: "Node.js",  y: 70, color: "#2b7cff" },
-          { label: "React",  y: 90, color: "#F02D3A" },
-          { label: "Javascript", y: 90, color: "#2b7cff" },
-          { label: "CSS", y: 90, color: "#F02D3A" },
-          { label: "HTML",  y: 90, color: "#2b7cff" },
+          { label: "SQL/Postgres",  y: 70, color: "#F02D3A" },
+          { label: "Wordpress",  y: 80, color: "#2b7cff" },
+          { label: "IT Support",  y: 80, color: "#F02D3A" },
+          { label: "React",  y: 90, color: "#2b7cff" },
+          { label: "Javascript", y: 90, color: "#F02D3A" },
+          { label: "CSS/SASS", y: 90, color: "#2b7cff" },
+          { label: "HTML",  y: 90, color: "#F02D3A" },
       ]
      }]
  }
