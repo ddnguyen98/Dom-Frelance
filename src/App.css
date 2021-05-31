@@ -85,6 +85,10 @@
   display: block;
 }
 
+.articles img {
+  border: solid #282c34 4px;
+}
+
 .articlesContent {
   padding: 25px 0;
   display: inline-block;
