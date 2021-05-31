@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  overflow: hidden;
 }
 
 .highlight{
@@ -13,6 +13,10 @@
   z-index: 1;
 }
 
+#home {
+  padding-top: 100px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -20,9 +24,9 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  /*background-color: #282c34;*/
   color: white;
+  text-align: center;
 }
 
 .App-link {
@@ -50,7 +54,7 @@
   padding: 10px 15px;
 }
 
-#about h1, #projects h1, #testimonials h1, #contact h1 {
+#about h1, #projects h1, #testimonials h1, #contact h1, #client h1 {
   padding: 50px 0;
 }
 
@@ -62,16 +66,13 @@
   display: block;
 }
 
-#about, #projects, #testimonials, #contact {
+#about, #projects, #testimonials, #contact, #client {
   padding: 50px 0;
-}
-#projects {
-  background-color: #F6F8F8;
 }
 
 #contact {
   color: white;
-  background-color: #223843;
+  /*background-color: #223843;*/
 }
 
 .footer {
