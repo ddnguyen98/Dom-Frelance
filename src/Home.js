@@ -11,7 +11,7 @@ import {
   Container
 } from 'reactstrap';
 
-import { FaGithubSquare, FaLinkedin, FaExternalLinkAlt } from "react-icons/fa";
+import { FaGithubSquare, FaLinkedin, FaFileDownload, FaExternalLinkAlt } from "react-icons/fa";
 import logo from './img/star.svg';
 import me from './img/me2.jpg';
 import carol from './img/carol.png';
@@ -237,6 +237,7 @@ function App() {
             <div className="faiconcontent">
             <a href="https://github.com/ddnguyen98" title="Github Account" target="_blank" rel="noopener noreferrer"><FaGithubSquare className="faicon"></FaGithubSquare></a>
             <a href="https://www.linkedin.com/in/dominic-nguyen-b385b7165/" title="Linkedin Account" target="_blank" rel="noopener noreferrer"><FaLinkedin className="faicon"></FaLinkedin></a>
+            <a href="Dominic_Nguyen_Resume.pdf" title="Resume Download" target="_blank" rel="noopener noreferrer" download><FaFileDownload className="faicon"></FaFileDownload></a>
             </div>
             <p>Dominic Nguyen <b className="highlight">©2021</b></p>
           </Container>
