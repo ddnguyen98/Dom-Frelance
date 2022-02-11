@@ -12,7 +12,7 @@
     "babel-register": "^6.26.0",
     "bootstrap": "^4.4.1",
     "canvasjs": "^1.8.3",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-icons": "^3.10.0",
